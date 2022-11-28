@@ -23,13 +23,13 @@
     <div class="offset-md-2 col-lg-9">
       <form method="post" action="{% url 'todos:add' %}">
         {% csrf_token %}
-        <div class="form-row">
+          <div class="form-row">
           <div class="col-md-6">
             <input type="text" class="form-control" name="title" placeholder="Do laundry" required>
           </div>
           <div class="col-md-6">
             <button type="submit" name="submit" class="btn btn-outline-primary">
-              Add
+              Add Task
             </button>
           </div>
         </div>
